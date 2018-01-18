@@ -1,46 +1,135 @@
+/*----------fonts--------*/
 
+@font-face {
+    font-family: 'chunkfiveregular';
+    src: url('../fonts/chunkfive-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/chunkfive-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proxima_novathin';
+    src: url('../fonts/proximanovat_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../fonts/proximanova_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proximanova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../fonts/proximanova_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novablack';
+    src: url('../fonts/proximanova_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*element style--------*/
+
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+hr{
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+background-color: #c1282d;
+height: 4px;
+}
+
+.hr-2{
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+background-color: #fff;
+height: 4px;
+}
+
+h1, h2{
+  font-family: 'chunkfiveregular' , sans-serif;
+}
+
+  h2{
+    font-size: 45px;
+    color: #020304;
+  }
+
+p{
+  font-family:'proxima_novasemibold' , sans-serif;
+}
+
+/*---nav styles----------*/
 nav, .navbar .navbar-default{
     margin-bottom: 0!important;
-    height: 60px;
+    height: 80px;
 }
 .navbar-default {
   background-color: #fff;
   border-color: transparent;
-  background-image: url("../img/nav.png");
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 55px;
+  height: 80px;
   z-index: 4;
+  opacity: .9;
+}
 
-
+.navbar-right {
+    margin-right: 20px;
+    padding-top: 25px;
+    background:transparent!important;
 }
 
 .navbar-default .navbar-brand {
-    color: #d60b18;
+    color:#c1282d;
 }
 
-.navbar-brand {
+.navbar-brand .logo{
     float: left;
-    height: 50px;
-    padding: 15px 15px;
-    font-size: 30px;
-    line-height: 20px;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    height: 60px;
+    padding-bottom: 10px;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #d60b18;
+    color:#c1282d;
     font-size: 22px;
     background:#fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'proxima_novasemibold', sans-serif;
     font-weight: 400;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #fff;
-    background-color: #d60b18;
+    background-color: #c1282d;
 }
 .dropdown-menu {
     position: absolute;
@@ -55,7 +144,7 @@ nav, .navbar .navbar-default{
     font-size: 14px;
     text-align: left;
     list-style: none;
-    background-color: #d60b18;
+    background-color: #c1282d;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid #ccc;
@@ -76,7 +165,10 @@ nav, .navbar .navbar-default{
     margin-right: 20px;
 }
 
-#page-1 header{
+
+/*-------header styles-------*/
+
+header{
     width:100%;
     height: 710px;
     background:url(../img/header2.png);
@@ -85,60 +177,51 @@ nav, .navbar .navbar-default{
     margin:0;
    padding: 0;
 }
-#page-2 header{
-    width:100%;
-    height: 600px;
-    background:#fff;
-    margin-top: 50px;
-}
-#page-1 .jumbotron{
+
+.jumbotron{
     background: transparent;
     margin-top: 45px;
     color:#fff;
     width:100%;
 }
 
-
-#page-2 .jumbotron{
-    background: #333;
-    margin-top: 0px;
-    color:#fff;
-    width:100%;
-}
-
-.photos-header-text{
-    font-size: 60px;
-    font-weight: 600;
-    color:#333;
-}
 .header-text-color{
-    color: #d60b18;
+    color: #c1282d;
     font-size: 90px;
 }
 
 .jumbotron h1{
     margin-bottom: 25px;
     font-size: 80px;
-    font-weight: 600;
     letter-spacing: 3px;
+    font-family:  'chunkfiveregular' , sans-serif!important;
 }
 
 .jumbotron p {
     margin-bottom: 25px;
     font-size: 30px;
-    font-weight: 400;
+    font-family: 'proxima_novasemibold' , sans-serif;
+
 }
 .btn-primary{
-    background:#d60b18;
+    background:#c1282d;
     color:#fff;
     border:none;
     box-shadow: 3px 5px 5px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    font-family: 'proxima_novathin' , sans-serif;
+    padding:15px;
 }
 .btn-primary:hover{
     background:#fff;
-    color: #d60b18;
+    color: #c1282d;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
+}
+
+.photos-btn{
+   background:#828383;
+   color: #fff;
 }
 
 .social-icons {
@@ -150,7 +233,7 @@ nav, .navbar .navbar-default{
 }
 
 .social-icons a:hover{
-    color: #d60b18;
+    color: #c1282d;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
 }
@@ -159,24 +242,102 @@ i {
 }
 
 
+
+  /*-------------About Section----------*/
+
+.about-text-color{
+    color:#c1282d;
+    font-size: 50px;
+}
+.about-content{
+    height: 400px;
+    text-align: center;
+    padding:20px;
+    font-size: 20px;
+    font-family: 'proxima_novasemibold' , sans-serif;
+}
+
+.about-text{
+  padding:50px;
+  font-size: 30px;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #020304;
+}
+
+
+
+/*-------Team Section Styles---------*/
+#team{
+  height: 520px;
+  border-top: 1px solid #828383;
+}
+
+.member-heading{
+  margin-top: 40px;
+}
+.member-text-color{
+  color: #c1282d;
+  font-size: 50px;
+}
+
+.member-wrapper{
+  background:#fff;
+  border-radius: 10px;
+  padding:20px;
+  box-shadow: 6px 5px 5px rgba(0,0,0,0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+.member-content{
+  background:#c1282d;
+  text-align: center;
+  padding:20px;
+  color: #020304;
+  font-family: 'proxima_novasemibold' , sans-serif;
+  margin-top:20px;
+}
+
+
+
+
+/*----------Footer Styles------------*/
+
+footer{
+  width: 100%;
+  text-align: center;
+  margin:0;
+
+}
+.footer-logo{
+    height: 100px;
+    width: 300px;
+    text-align: center;
+}
+
+
+
+/*----------media queries----------*/
+
 @media (max-width: 767px){
 .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
     width: 100%;
     margin-top: 0;
-    background-color: #d60b18;
+    background-color:#c1282d;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    color: #333;
+    color: #020304;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #d60b18;
+    color: #c1282d;
     font-size: 22px;
     background: #fff;
     font-family: 'Roboto', sans-serif;
@@ -185,103 +346,14 @@ i {
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #333;
+    color: #020304;
     background-color: #fff;
 }
 
-.navbar-toggle {
-  float: left !important;
-  margin-left: 15px;
-  margin-right: 0;
 }
 
-.modal{
-      background-color: rgba(0,0,0,.6);
-}
-.modal-nav-content {
-  width: 100%;
-  height: auto;
-}
 
-.modal-nav-body {
-  margin-top: 100px; 
-}
-
-.modal-nav-body ul {
-  list-style-type: none;
-  color: white;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.modal-nav-body ul li {
-  text-align: center;
-  font-size: 130%;
-  padding: 8px;
-  text-transform: uppercase;
-}
-.modal-nav-body ul li a {
-  text-align: center;
-  font-size: 130%;
-  padding: 8px;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-}
-.open .dropdown-menu {
-    transition: max-height 1s;
-    max-height: 100vh;
-    opacity: 1;
-  }
-
-
-
-  /*-------------Find Photos Page Styling----------*/
-
-
-.circle {
-  position: absolute;
-  display: block;
-  margin: 2em 0;
-  background-color: transparent;
-  color: #222;
-  text-align: center;
-  z-index: 999;
-}
-
-.circle:after {
-  display: block;
-  padding-bottom: 100%;
-  width: 100%;
-  height: 0;
-  border-radius: 50%;
-  background-color: #ddd;
-  content: "";
-}
-
-.circle__inner {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.circle__wrapper {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
-.circle__content {
-  display: table-cell;
-  padding: 1em;
-  vertical-align: middle;
-}
-
-  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
@@ -300,14 +372,14 @@ i {
 }
     
     .navbar-default .navbar-toggle {
-    border-color: #d60b18;
+    border-color: #c1282d;
 }
 
     .navbar-default .navbar-toggle .icon-bar {
-    background-color: #d60b18;
+    background-color: #c1282d;
 }
 
-#page-1 header{
+header{
     width:100%;
     height: 670px;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/header2.png") no-repeat center; 
@@ -317,11 +389,13 @@ i {
     margin:0;
     padding: 0;
 }
-.jumbotron {
-    padding-top: 20px;
+
+.jumbotron{
+    background: transparent;
+    margin-top: 120px;
+    color:#fff;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    
 }
 
 .social-icons-small a{
@@ -329,13 +403,91 @@ i {
 }
 
 .social-icons-small a:hover{
-    color: #d60b18;
+    color: #c1282d;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
 }
-
-
-
+#team{
+  height: 800px;
+  border-top: 1px solid #828383;
+}
+.jumbotron h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family:  'chunkfiveregular' , sans-serif!important;
+}
+.header-text-color{
+    color: #c1282d;
+    font-size: 40px;
 }
 
+  /*-------------About Section----------*/
+
+  h2{
+    font-size: 40px;
+    color: #020304;
+  }
+.about-text-color{
+    color:#c1282d;
+    font-size: 40px;
 }
+.about-content{
+    height: 400px;
+    padding:20px;
+    font-size: 20px;
+    font-family: 'proxima_novasemibold' , sans-serif;
+}
+
+.about-text{
+  padding:50px;
+  font-size: 20px;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #020304;
+  text-align: left;
+}
+
+
+/*-------Team Section Styles---------*/
+#team{
+  width: 100%;
+  border-top: 1px solid #828383;
+  height: 400px;
+}
+
+.member-heading{
+  margin-top: 40px;
+}
+.member-text-color{
+  color: #c1282d;
+  font-size: 40px;
+}
+
+.member-wrapper{
+  background:#fff;
+  border-radius: 10px;
+  padding:20px;
+  box-shadow: 6px 5px 5px rgba(0,0,0,0.5);
+  width: 100%;
+}
+.member-content{
+  background:#c1282d;
+  text-align: center;
+  padding:0px;
+  color: #020304;
+  font-family: 'proxima_novasemibold' , sans-serif;
+  margin-top:20px;
+  font-size: 15px;
+}
+
+.photos-btn{
+   background:#828383;
+   color: #fff;
+}
+}
+
+
+
+
