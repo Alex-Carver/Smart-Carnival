@@ -76,7 +76,7 @@ nav, .navbar .navbar-default{
     margin-right: 20px;
 }
 
-header{
+#page-1 header{
     width:100%;
     height: 710px;
     background:url(../img/header2.png);
@@ -85,21 +85,42 @@ header{
     margin:0;
    padding: 0;
 }
-
-.jumbotron{
+#page-2 header{
+    width:100%;
+    height: 600px;
+    background:#fff;
+    margin-top: 50px;
+}
+#page-1 .jumbotron{
     background: transparent;
     margin-top: 45px;
     color:#fff;
     width:100%;
 }
+
+
+#page-2 .jumbotron{
+    background: #333;
+    margin-top: 0px;
+    color:#fff;
+    width:100%;
+}
+
+.photos-header-text{
+    font-size: 60px;
+    font-weight: 600;
+    color:#333;
+}
 .header-text-color{
     color: #d60b18;
     font-size: 90px;
 }
+
 .jumbotron h1{
     margin-bottom: 25px;
     font-size: 80px;
     font-weight: 600;
+    letter-spacing: 3px;
 }
 
 .jumbotron p {
@@ -214,6 +235,52 @@ i {
     opacity: 1;
   }
 
+
+
+  /*-------------Find Photos Page Styling----------*/
+
+
+.circle {
+  position: absolute;
+  display: block;
+  margin: 2em 0;
+  background-color: transparent;
+  color: #222;
+  text-align: center;
+  z-index: 999;
+}
+
+.circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #ddd;
+  content: "";
+}
+
+.circle__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
+}
+
   /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
@@ -240,7 +307,7 @@ i {
     background-color: #d60b18;
 }
 
-header{
+#page-1 header{
     width:100%;
     height: 670px;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/header2.png") no-repeat center; 
