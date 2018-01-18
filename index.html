@@ -17,7 +17,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#nav-modal" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -31,6 +31,32 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Find My Photos</a></li>
         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Why Smart Carnival</a></li>
+            <li><a href="#">The Team</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Clients <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Value Proposition</a></li>
+             <li><a href="#">Pricing</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-nav-content">
+      <div class="modal-nav-body">
+        <ul>
+          <li><a href="#">Find My Photos</a></li>
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Why Smart Carnival</a></li>
@@ -43,19 +69,18 @@
             <li><a href="#">Products</a></li>
             <li><a href="#">Value Proposition</a></li>
              <li><a href="#">Pricing</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <header>
 	<div class="container">
 		<div class="jumbotron">
   			<h1><span class="header-text-color">S</span>mart <span class="header-text-color">C</span>arnival</h1>
   			<p>Modernizing and Amplifying<br>the Carnival Experience.</p>
-  			<p class="contact-button"><a class="btn btn-primary btn-lg" href="#" role="button">Contact Us</a><span class="social-icons"><i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa  fa-twitter" aria-hidden="true"></i></span></p>
+  			<p class="contact-button"><a class="btn btn-primary btn-lg" href="#" role="button">Contact Us</a><span class="social-icons"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href=""><i class="fa  fa-twitter" aria-hidden="true"></i></a></span></p>
 		</div>
 	</div>
 
@@ -70,5 +95,7 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</script>
 </body>
 </html>
