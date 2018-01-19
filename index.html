@@ -13,7 +13,7 @@
 
 
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -37,12 +37,7 @@
             <li ><a href="#team">The Team</a></li>
           </ul>
         </li>
-          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Clients <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li ><a href="products.html">Products</a></li>
-            <li ><a href="valueproposition.html">Value Proposition</a></li>
-             <li><a href="pricing.html">Pricing</a></li>
+           <li><a href="#clients">Clients</a></li>
           </ul>
         </li>
       </ul>
@@ -51,14 +46,15 @@
 </nav>
 
 <header>
+<div class="parrallax-header">
 	<div class="container">
 		<div class="jumbotron">
   			<h1><span class="header-text-color">S</span>mart <span class="header-text-color">C</span>arnival</h1>
   			<p>Modernizing and Amplifying the Attractions<br>and Amusements Industry.</p>
-  			<p class="contact-button"><a class="btn btn-primary btn-lg" href="#" role="button">Contact Us</a><span><a class="photos-btn btn btn-primary btn-lg" href="#" role="button">Find My Photos</a></span></p>
+  			<p class="contact-button"><a class="btn btn-primary btn-lg" href="#" role="button">Contact Us</a><span><a class="btn btn-primary btn-lg" href="#" role="button">Find My Photos</a></span></p>
 		</div>
 	</div>
-
+</div>
 </header>
 
 <section id="about">
@@ -66,13 +62,12 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h2>Why<span class="about-text-color"> Smart Carnival</span></h2>
-        <hr>
       </div>
     </div>
     </div>
-    <div class="container">
+  <div class="container">
       <div class="row">
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 text-center about-description-wrapper">
         <p class="about-text">
           Smart Carnival’s mission is to modernize the amusement, carnival and inflatables industries with hardware and software that enhances the <br>carnival-goer’s experience and enhances revenue for its customers. 
         </p>
@@ -92,55 +87,82 @@
         <p class="text-content">With an 8 hour battery life, Smart Carnival captures the special and fun moments all day long without needing to be recharged or replaced.</p>
       </div>
     </div>
-    </div>
+  </div>
 </section>
 
 <section id="team">
+   <div class="parrallax">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
-        <h2 class="member-heading">The<span class="member-text-color"> Smart Carnival </span>Team</h2>
+      <div class="col-md-12 text-center member-header-background">
+        <h2 class="member-heading">The<span class="about-text-color"> Smart Carnival </span>Team</h2>
       </div>
     </div>
     </div>
     <div class="container-fluid">
     <div class="row member-content">
-      <div class="col-md-3">
-         <div class="member-wrapper">
-        <img  src="./img/member1.png">
-        <p class="text-content" >Jesse Ou<br>
-          Founder &amp; CEO</p><br>
-        <p class="text-content">Lead Security Engineer,<br><a href="salesforce.com">Salesforce.com</a></p>
+      <div class="col-md-3 member-background-small">
+         <div class="member-wrapper member">
+        <img  class="member-img" class="member-right" src="./img/member1.png">
+        <p class="member-text-left" >Jesse Ou - Founder &amp; CEO</p><br>
+        <p class="member-text-left">Lead Security Engineer,<br><a href="salesforce.com">Salesforce.com</a></p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 member-background-small">
         <div class="member-wrapper">
-        <img  src="./img/member2.png">
-         <p class="text-content" >Larry Trowell<br>
-          CTO</p><br>
-        <p class="text-content">Principal Consaltunt,<br><b>Synopsys</b></p>
+        <img src="./img/member2.png">
+         <p>Larry Trowell - Co-Founder &amp; CT</p><br>
+        <p>Principal Consaltant,<br><b>Synopsys</b></p>
       </div>
       </div>
-        <div class="col-md-3">
+        <div class="col-md-3 member-background-small">
            <div class="member-wrapper">
-        <img  src="./img/member3.png">
-         <p class="text-content" >Josh Johns<br>
-          Co Founder &amp; Sales</p><br>
-        <p class="text-content">Owner<br><b>J. Johns Studios</b></p>
+        <img src="./img/member3.png">
+         <p>Josh Johns - Co Founder &amp; Sales</p><br>
+          <p>Owner,<br><b>J. Johns Studios</b></p>
         </div>
         </div>
-       <div class="col-md-3">
+       <div class="col-md-3 member-background-small">
           <div class="member-wrapper">
-        <img  src="./img/member4.png">
-         <p class="text-content" >Sara Abernethy<br>
-          Director of Business Development</p><br>
-        <p class="text-content"><b>Senior Strategist,<br>Idea Couture</b></p>
+        <img   src="./img/member4.png">
+         <p  >Sara Abernethy - Director of Business Development</p>
+        <p ><b>Senior Strategist,<br>Idea Couture</b></p>
         </div>
       </div>
     </div>
     </div>
+  </div>
+  <div id="clients"></div>
 </section>
-   <footer>
+<section>
+  <div class="container">
+    <div class="row">
+     <div class="col-md-12 text-center">
+        <h2><span class="about-text-color">Smart Carnival </span> Clients</h2>
+          <h3>You set the rates, <br class="hidden-lg hidden-md">we share the <span class="clients">revenue!</span></h3>
+      </div>
+      </div>
+  <div class="row text-center">
+    <div class="col-md-12 clients-wrapper">
+              <p ><a class="product-btn btn btn-primary btn-lg" href="#" role="button">Products Offered</a><span><a class="product-btn btn btn-primary btn-lg" href="#" role="button">Value Proposition</a></span><span><a class=" product-btn btn btn-primary btn-lg" href="#" role="button">System Pricing</a></span></p>
+    </div>
+</div>
+    <div id="clients-jumbotron" class="jumbotron">
+        <p class="clients-jumbotron-text">Our technology system captures the perfect moment in photo or video. Your customers personalize, save, and share. You set the rates to monetize the system, and we split the revenue.</p>
+         <p class="clients-jumbotron-text">The system easily mounts to Dunk Tanks, Slides, Obstacle Courses, and more attractions coming soon. Smart Carnival increases your revenue potential and differentiates your business from the competition.</p>
+           <p class="text-center"><a class="survey-btn btn btn-primary btn-lg" href="#" role="button">Take a Survey!</a></p>
+
+    </div>
+</div>
+</section>
+<section id="contact">
+  <div class="connect-parrallax">
+      <div id="connect-jumbotron" class="jumbotron text-center">
+        <h2 class="connect"> Connect with <span class="connect-text-color" style="color:#c1282d;">Smart Carnival</span><span><a class="connect-button btn btn-primary btn-lg" href="#" role="button">Contact</a></span></h2>
+      </div>
+  </div>
+</section>
+   <section id="footer">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12 text-center">
@@ -149,24 +171,8 @@
               </div>
             </div>
           </div>
-   </footer>
-   <!-- ==========================
-        FOOTER SECTION
-        =========================== 
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12 text-center">
-              <img class="footer-logo" src="./img/logo.png">
-                <p>All Rights Reserved. &copy; 2018 Smart Carnival</p>
-              </div>
-            </div>
-          </div>
-
-
-    <!==========================
-        FOOTER SECTION END
-        =========================== -->   
+   </section>
+  
 	
 
 
