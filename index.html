@@ -8,7 +8,8 @@
 <link rel="stylesheet" type="text/css" href="./css/custom.css">
 	<title>Smart Carnival</title>
 </head>
-<body>
+
+<body id="main">
 
 
 
@@ -29,18 +30,18 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="findmyphotos.html">Find My Photos</a></li>
-        <li class="dropdown">
+        <li >
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About Us <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#about">Why Smart Carnival</a></li>
-            <li><a href="#">The Team</a></li>
+            <li ><a href="#about">Why Smart Carnival</a></li>
+            <li ><a href="#team">The Team</a></li>
           </ul>
         </li>
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Clients <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="products.html">Products</a></li>
-            <li><a href="valueproposition.html">Value Proposition</a></li>
+            <li ><a href="products.html">Products</a></li>
+            <li ><a href="valueproposition.html">Value Proposition</a></li>
              <li><a href="pricing.html">Pricing</a></li>
           </ul>
         </li>
@@ -63,7 +64,7 @@
 <section id="about">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 text-center">
+      <div class="col-md-12 text-center">
         <h2>Why<span class="about-text-color"> Smart Carnival</span></h2>
         <hr>
       </div>
@@ -71,23 +72,23 @@
     </div>
     <div class="container">
       <div class="row">
-      <div class="col-xs-12 text-center">
+      <div class="col-md-12 text-center">
         <p class="about-text">
           Smart Carnival’s mission is to modernize the amusement, carnival and inflatables industries with hardware and software that enhances the <br>carnival-goer’s experience and enhances revenue for its customers. 
         </p>
       </div>
     </div>
     <div class="row about-content">
-      <div class="col-xs-4">
-        <img class="img-responsive" src="./img/camera.png">
+      <div class="col-md-4">
+        <img  src="./img/camera.png">
         <p class="text-content" >Smart Carnival’s camera is waterproof and has a super hydrophobic lens, so water will never ruin your photo. </p>
       </div>
-      <div class="col-xs-4">
-        <img class="img-responsive" src="./img/photos.png">
-        <p class="text-contentt">Photos and slow motion videos can be edited, clipped, filtered downloaded straight to your phone or shared on social media!  No other company offers as seamless a photo experience.</p>
+      <div class="col-md-4">
+        <img  src="./img/photos.png">
+        <p class="text-content">Photos and slow motion videos can be edited, clipped, filtered downloaded straight to your phone or shared on social media!  No other company offers as seamless a photo experience.</p>
       </div>
-      <div class="col-xs-4">
-        <img class="img-responsive" src="./img/battery.png">
+      <div class="col-md-4">
+        <img  src="./img/battery.png">
         <p class="text-content">With an 8 hour battery life, Smart Carnival captures the special and fun moments all day long without needing to be recharged or replaced.</p>
       </div>
     </div>
@@ -97,40 +98,40 @@
 <section id="team">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 text-center">
+      <div class="col-md-12 text-center">
         <h2 class="member-heading">The<span class="member-text-color"> Smart Carnival </span>Team</h2>
       </div>
     </div>
     </div>
     <div class="container-fluid">
     <div class="row member-content">
-      <div class="col-xs-3">
+      <div class="col-md-3">
          <div class="member-wrapper">
-        <img class="img-responsive"  src="./img/member1.png">
+        <img  src="./img/member1.png">
         <p class="text-content" >Jesse Ou<br>
           Founder &amp; CEO</p><br>
         <p class="text-content">Lead Security Engineer,<br><a href="salesforce.com">Salesforce.com</a></p>
         </div>
       </div>
-      <div class="col-xs-3">
+      <div class="col-md-3">
         <div class="member-wrapper">
-        <img class="img-responsive"  src="./img/member2.png">
+        <img  src="./img/member2.png">
          <p class="text-content" >Larry Trowell<br>
           CTO</p><br>
         <p class="text-content">Principal Consaltunt,<br><b>Synopsys</b></p>
       </div>
       </div>
-        <div class="col-xs-3">
+        <div class="col-md-3">
            <div class="member-wrapper">
-        <img class="img-responsive"  src="./img/member3.png">
+        <img  src="./img/member3.png">
          <p class="text-content" >Josh Johns<br>
           Co Founder &amp; Sales</p><br>
         <p class="text-content">Owner<br><b>J. Johns Studios</b></p>
         </div>
         </div>
-       <div class="col-xs-3">
+       <div class="col-md-3">
           <div class="member-wrapper">
-        <img class="img-responsive" src="./img/member4.png">
+        <img  src="./img/member4.png">
          <p class="text-content" >Sara Abernethy<br>
           Director of Business Development</p><br>
         <p class="text-content"><b>Senior Strategist,<br>Idea Couture</b></p>
@@ -139,21 +140,31 @@
     </div>
     </div>
 </section>
-
-   <!-- ==========================
-        FOOTER SECTION
-        =========================== -->
-        <footer>
+   <footer>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-xs-12 text-center">
+              <div class="col-md-12 text-center">
               <img class="footer-logo" src="./img/logo.png">
                 <p>All Rights Reserved. &copy; 2018 Smart Carnival</p>
               </div>
             </div>
           </div>
-        </footer>
-    <!-- ==========================
+   </footer>
+   <!-- ==========================
+        FOOTER SECTION
+        =========================== 
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 text-center">
+              <img class="footer-logo" src="./img/logo.png">
+                <p>All Rights Reserved. &copy; 2018 Smart Carnival</p>
+              </div>
+            </div>
+          </div>
+
+
+    <!==========================
         FOOTER SECTION END
         =========================== -->   
 	

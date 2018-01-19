@@ -52,6 +52,24 @@
 
 /*element style--------*/
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+#main{
+    margin: 0 0 100px;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color:#fff;
+}
+
 section{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -101,7 +119,6 @@ nav, .navbar .navbar-default{
   width: 100%;
   height: 80px;
   z-index: 4;
-  opacity: .9;
 }
 
 .navbar-right {
@@ -304,12 +321,7 @@ i {
 
 /*----------Footer Styles------------*/
 
-footer{
-  width: 100%;
-  text-align: center;
-  margin:0;
 
-}
 .footer-logo{
     height: 100px;
     width: 300px;
@@ -320,7 +332,14 @@ footer{
 
 /*----------media queries----------*/
 
-@media (max-width: 767px){
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+  #main{
+    margin: 0 0 300px;
+    height: 5000px;
+}
 .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -350,6 +369,52 @@ footer{
     background-color: #fff;
 }
 
+
+  /*-------------About Section----------*/
+
+.about-text-color{
+    color:#c1282d;
+    font-size: 50px;
+}
+.about-text{
+  padding:20px;
+  font-size: 30px;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #020304;
+}
+
+.about-content{
+    height: 400px;
+    text-align: center;
+    padding:20px;
+    font-size: 20px;
+    font-family: 'proxima_novasemibold' , sans-serif;
+}
+
+.text-content{
+  font-size: 30px;
+  margin-top: 20px;
+  color: #020304;
+  padding:20px;
+}
+
+.member-wrapper{
+  background:#fff;
+  border-radius: 10px;
+  padding:20px;
+  box-shadow: 6px 5px 5px rgba(0,0,0,0.5);
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+#about{
+  height: 1550px;
+}
+
+
+
 }
 
 
@@ -361,6 +426,13 @@ footer{
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+    .drop {
+    background-color: #c1282d;
+    color: #fff;
+    }
+    li a{
+      color: #fff;
+    }
     .navbar-brand {
     float: left;
     height: 50px;
@@ -423,7 +495,9 @@ header{
 }
 
   /*-------------About Section----------*/
-
+#about{
+  height: 1710px;
+}
   h2{
     font-size: 40px;
     color: #020304;
@@ -454,7 +528,7 @@ header{
 #team{
   width: 100%;
   border-top: 1px solid #828383;
-  height: 400px;
+  height: 100px;
 }
 
 .member-heading{
@@ -465,13 +539,14 @@ header{
   font-size: 40px;
 }
 
-.member-wrapper{
-  background:#fff;
-  border-radius: 10px;
+.text-content{
+  font-size: 20px;
+  margin-top: 20px;
+  color: #020304;
   padding:20px;
-  box-shadow: 6px 5px 5px rgba(0,0,0,0.5);
-  width: 100%;
+  text-align: left;
 }
+
 .member-content{
   background:#c1282d;
   text-align: center;
@@ -482,10 +557,34 @@ header{
   font-size: 15px;
 }
 
+
+.member-wrapper{
+  background:#fff;
+  border-radius: 10px;
+  padding:20px;
+  box-shadow: 6px 5px 5px rgba(0,0,0,0.5);
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+
 .photos-btn{
    background:#828383;
    color: #fff;
 }
+#main{
+    margin: 0 0 300px;
+    height: 4920px;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #c1282d;
+}
+.dropdown-menu>li>a{
+    color: #fff;
+    font-size: 15px;
+}
+
 }
 
 
