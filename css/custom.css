@@ -125,7 +125,7 @@ p{
 
 a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 #footer{
@@ -183,6 +183,7 @@ nav, .navbar .navbar-fixed-top{
     font-family: 'proxima_novasemibold', sans-serif;
     font-weight: 400;
 }
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -377,7 +378,10 @@ nav, .navbar .navbar-fixed-top{
 .member-text{
   margin: 0;
 }
-
+.salesforce-link:hover{
+color:  #020304;
+text-decoration: none;
+}
 /*----------Client Section Styles------------*/
 
 .clients{
