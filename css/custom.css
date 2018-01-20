@@ -52,22 +52,26 @@
 
 /*element style--------*/
 
+.bold{
+  font-size: 30px;
+  color: #020304;
+  font-family:'proxima_novasemibold' , sans-serif;
+}
+
 html {
     position: relative;
     min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
-#main{
-    margin: 0 0 30px;
-    height: 100%;
-}
+
 
 
 section{
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 100%;
 }
-
 
 
 h1, h2{
@@ -268,23 +272,16 @@ nav, .navbar .navbar-fixed-top{
     transition: .5s ease-in-out;
 }
 
-
-.social-icons {
-    margin-left: 20px;
-    margin-top: 5px;
-}
-.social-icons a{
+.social a{
     color: #fff;
 }
 
-.social-icons a:hover{
+.social a:hover{
     color: #c1282d;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
 }
-i {
-    margin-right: 5px;
-}
+
 
 
 
@@ -525,6 +522,13 @@ i {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.pricing-list{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 20px;
+}
 h4{
   font-size: 20px;
   color: #fff;
@@ -539,13 +543,17 @@ h4{
   font-size: 20px;
   font-family: 'proxima_novasemibold' , sans-serif;
   color: #020304;
+  padding: 20px;
+  width: 100%;
+  min-width: 300px;
+  list-style-type: circle;
 }
 
 /*-------Find my Photos Page Styles-------*/
 
 #photos-jumbotron{
   background-image: url(../img/findmyphotos.png);
-  height: 500px;
+  height: 400px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -557,7 +565,7 @@ h4{
 
 .photos-text{
   padding-right:100px;
-  margin-top: 50px;
+  margin-top: 0px;
   max-width: 500px;
   width: 100%;
 
@@ -623,6 +631,20 @@ textarea.form-control {
 
 }
 
+
+/*-----------Connect with us Styles-------*/
+
+ul, .connect-social{
+  list-style-type: none;
+  text-align: center;
+  margin:0px;
+  padding: 0;
+}
+.social{
+  display: inline-block;
+  padding: 10px;
+}
+
 /*----------Footer Styles------------*/
 
 footer{
@@ -639,6 +661,21 @@ footer{
     text-align: center;
 }
 
+.social-footer{
+  display: inline-block;
+  padding: 10px;
+}
+
+.social-footer a{
+    color:#c1282d;
+}
+
+.social-footer a:hover{
+    color: #020304;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
 
 
 /*----------media queries----------*/
@@ -648,6 +685,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 
 /*--------------Nav Styles------------*/
+
 .navbar-fixed-top.open .dropdown-menu {
     position: static;
     float: none;
@@ -675,6 +713,12 @@ and (max-device-width : 1024px) {
     color: #020304;
     background-color: #fff;
 }
+  
+
+  .navbar-nav.nav-justified > li{
+    float:none;
+  }   
+
 
 /*-----------------Header Styles---------*/
 .parrallax-header {
@@ -773,6 +817,7 @@ and (max-device-width : 1024px) {
 }
 
 
+
 }
 
 
@@ -784,7 +829,20 @@ and (max-device-width : 1024px) {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
-
+h2 {
+    font-size: 30px;
+    color: #020304;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+  h2:before, h2:after {
+    display: none;
+}
+h2:before {
+    display: none;
+}
 
     li a{
       color: #fff;
@@ -798,6 +856,11 @@ and (max-device-width : 1024px) {
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
 }
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    min-height: 340px;
+    width: 420px;
+
+}
     
    .navbar-fixed-top .navbar-toggle {
     border-color: #c1282d;
@@ -805,6 +868,46 @@ and (max-device-width : 1024px) {
 
  .navbar-fixed-top .navbar-toggle .icon-bar {
     background-color: #c1282d;
+}
+.navbar-fixed-top .navbar-nav>.open>a, .navbar-fixed-top .navbar-nav>.open>a:focus, .navbar-fixed-top .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #c1282d;
+    box-shadow: 2px 2px rgba(0,0,0,.2);
+}
+.navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: #c1282d;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: left;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 420px;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #c1282d;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    color: #fff;
+    text-align: center;
 }
 
 .parrallax-header {
@@ -857,13 +960,10 @@ and (max-device-width : 1024px) {
   height: 1800px;
   margin:0;
 }
-  h2{
-    font-size: 40px;
-    color: #020304;
-  }
+
 .about-text-color{
     color:#c1282d;
-    font-size: 40px;
+    font-size: 30px;
 }
 .about-content{
     height: 400px;
@@ -916,12 +1016,6 @@ and (max-device-width : 1024px) {
 }
 
 
-.navbar-fixed-top .navbar-nav>.open>a, .navbar-fixed-top .navbar-nav>.open>a:focus, .navbar-fixed-top .navbar-nav>.open>a:hover {
-    color: #fff;
-    background-color: #c1282d;
-}
-
-
   /*-------------Client Section Styles----------*/
 
   .product-btn{
@@ -957,27 +1051,74 @@ and (max-device-width : 1024px) {
 
 
 /*----------Photos Page Styling --------*/
+#photos-jumbotron {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'proxima_novasemibold' , sans-serif;
+    border-radius: 20px;
+    margin-top:20px;
 
-#photos-jumbotron{
-  background-image: url(../img/findmyphotos.png);
-  height: 600px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  font-size: 30px;
-  font-family: 'proxima_novasemibold' , sans-serif;
-  border-radius: 20px;
-}
+}   
 .photos-text{
   padding-right:0px;
-  margin-top: 50px;
+  margin-top: 0px;
   max-width: 500px;
   width: 100%;
   font-size: 20px;
 
 }
 
+/*-------Pricing Page-----------*/
+.pricing-heading {
+    font-size: 20px;
+    color: #fff;
+    background: #c1282d;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*---------Contact Page---------*/
+
+#contact{
+  width: 100%;
+  height: 800px;
+}
+.getintouch {
+    color: #fff;
+    font-size: 30px;
+}
+.contact-text-color {
+    color: #c1282d;
+    font-size: 35px;
+}
+.contact-section .col-md-6 {
+    width: 100%;
+}
+.submit {
+    font-size: 1.1em;
+    float: none;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0,0,0,.6);
+    background-color: #fff;
+    color: #c1282d;
+}
+.submit {
+    font-size: 1.1em;
+    float: none;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0,0,0,.6);
+    background-color: #fff;
+    color: #c1282d;
+}
 }
 
 
