@@ -96,6 +96,24 @@ h2:before {
     text-align: right;
 }
 
+h3{
+  font-size: 25px;
+  font-family:'proxima_novasemibold' , sans-serif;
+  color:  #020304;
+  margin-top: 30px;
+}
+
+.value-heading::after {
+  border-bottom: 1px solid red;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 400px;
+  left:50%;
+  transform: translateX(-50%);
+}
+
 
 p{
   font-family:'proxima_novasemibold' , sans-serif;
@@ -441,6 +459,112 @@ i {
 }
 
 
+/*----------Product Page Styles------------*/
+.products-wrapper{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.products-button{
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.product-spacer{
+  margin-top: 50px;
+}
+
+.product-img{
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgba(0,0,0,0.4);
+}
+
+
+/*----------Value Page Styles------------*/
+.spacer{
+  margin-top: 100px;
+}
+.rates-wrapper{
+  margin-top: 50px;
+}
+
+.rates-heading{
+  font-size: 20px;
+  color: #fff;
+  background:#c1282d;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.panel-default{
+  min-height: 500px;
+  margin-top: 20px;
+}
+
+.panel-heading{
+  background:#c1282d!important;
+  color: #fff!important;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'proxima_novasemibold' , sans-serif;
+}
+.summary-heading{
+  width: 100px;
+  height: 51px;
+}
+
+
+/*-------Pricing Page Styles-----------*/
+.pricing-heading{
+  font-size: 30px;
+  color: #fff;
+  background:#c1282d;
+  padding:10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h4{
+  font-size: 20px;
+  color: #fff;
+  background:#c1282d;
+  padding:10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pricing-list-wrapper{
+  margin:20px 0 80px 0;
+  font-size: 20px;
+  font-family: 'proxima_novasemibold' , sans-serif;
+  color: #020304;
+}
+
+/*-------Find my Photos Page Styles-------*/
+
+#photos-jumbotron{
+  background-image: url(../img/photos.png);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  font-size: 30px;
+  font-family: 'proxima_novasemibold' , sans-serif;
+  border-radius: 20px;
+}
+
+.photos-text{
+  padding-right:100px;
+  margin-top: 50px;
+  max-width: 500px;
+  width: 100%;
+
+}
+
+
+
 /*----------Footer Styles------------*/
 
 footer{
@@ -485,7 +609,6 @@ and (max-device-width : 1024px) {
     color: #c1282d;
     font-size: 22px;
     background: #fff;
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     border:1px, solid #000;
 }
@@ -581,6 +704,14 @@ and (max-device-width : 1024px) {
 
     /* Set a specific height */
     height: 200px; 
+}
+
+/*------Product Page Styling------*/
+.product-img{
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgba(0,0,0,0.4);
+  width: 100%;
 }
 
 
@@ -755,6 +886,38 @@ and (max-device-width : 1024px) {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 120px;
+}
+
+
+/*---------Product Page Styling------------*/
+.products-button{
+  min-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+/*----------Photos Page Styling --------*/
+
+#photos-jumbotron{
+  background-image: url(../img/photos.png);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  font-size: 30px;
+  font-family: 'proxima_novasemibold' , sans-serif;
+  border-radius: 20px;
+}
+.photos-text{
+  padding-right:0px;
+  margin-top: 50px;
+  max-width: 500px;
+  width: 100%;
+  font-size: 20px;
+
 }
 
 }
