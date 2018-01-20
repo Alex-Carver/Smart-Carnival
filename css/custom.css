@@ -177,6 +177,12 @@ nav, .navbar .navbar-fixed-top{
     color: #fff;
     background-color: #c1282d;
 }
+.navbar-fixed-top .navbar-nav>li>a:hover{
+    color:  #020304;
+    font-size: 22px;
+    font-family: 'proxima_novasemibold', sans-serif;
+    font-weight: 400;
+}
 .dropdown-menu {
     position: absolute;
     top: 100%;
