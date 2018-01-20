@@ -544,7 +544,7 @@ h4{
 /*-------Find my Photos Page Styles-------*/
 
 #photos-jumbotron{
-  background-image: url(../img/photos.png);
+  background-image: url(../img/findmyphotos.png);
   height: 500px;
   width: 100%;
   background-size: cover;
@@ -901,7 +901,7 @@ and (max-device-width : 1024px) {
 /*----------Photos Page Styling --------*/
 
 #photos-jumbotron{
-  background-image: url(../img/photos.png);
+  background-image: url(../img/findmyphotos.png);
   height: 600px;
   width: 100%;
   background-size: cover;
