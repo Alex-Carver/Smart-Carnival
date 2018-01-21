@@ -372,8 +372,9 @@ nav, .navbar .navbar-fixed-top{
   font-weight: bold;
 }
 
-.text-content{
-  margin:0;
+.text-content {
+    margin: 0;
+    text-align: left;
 }
 .member-text{
   margin: 0;
