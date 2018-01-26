@@ -698,6 +698,24 @@ footer{
     transition: .5s ease-in-out;
 }
 
+.developer-link{
+  font-size: 10px!important;
+  color: #333;
+  margin:0;
+}
+
+.developer-link a{
+  color: #333;
+  font-size: 12px;
+  padding-left: 10px;
+  bottom: 0;
+}
+
+.developer-link a:hover{
+  color: red;
+  font-size: 12px;
+}
+
 
 
 /*----------media queries----------*/
